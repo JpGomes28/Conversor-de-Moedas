@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Moedas</h1>
+        <form>
+            <input type="number" id="amount" placeholder="Valor">
+            <select id="fromCurrency">
+                <option value="USD">Dólar Americano (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">Libra Esterlina (GBP)</option>
+                <option value="JPY">Iene Japonês (JPY)</option>
+                <option value="CAD">Dólar Canadense (CAD)</option>
+                <!-- Adicione mais moedas aqui -->
+            </select>
+            <span>para</span>
+            <select id="toCurrency">
+                <option value="USD">Dólar Americano (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">Libra Esterlina (GBP)</option>
+                <option value="JPY">Iene Japonês (JPY)</option>
+                <option value="CAD">Dólar Canadense (CAD)</option>
+                <!-- Adicione mais moedas aqui -->
+            </select>
+            <button type="button" id="convert">Converter</button>
+        </form>
+        <h2>Resultado:</h2>
+        <div id="result">0.00</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
